@@ -1,12 +1,16 @@
 /* Style the navigation bar */
+* {
+  margin: 0px;
+  padding: 0px;
+}
 .navbar {
   width: 100%;
-  /* background-color: #555; */
   overflow: auto;
 }
 
 /* Navbar links */
 .navbar a {
+  /* display: block; */
   float: left;
   text-align: center;
   padding: 12px;
@@ -33,17 +37,8 @@
   }
 }
 body {
-  background: #141e30; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #243b55,
-    #141e30
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #243b55,
-    #141e30
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 }
 .top-section {
   /* width: 1540mm; */
@@ -76,4 +71,9 @@ body {
   /* margin-right: auto; */
   /* margin-top: auto; */
   /* margin-bottom: auto; */
+}
+canvas {
+  height: 100%;
+  width: 100%;
+  /* color: #4caf50; */
 }
