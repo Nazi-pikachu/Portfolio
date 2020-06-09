@@ -10,26 +10,6 @@
   position: fixed;
   transition: 0.5s;
   overflow-x: hidden;
-
-  /* for side navbar uncommet this */
-  /* height: 100%; */
-  /* 100% Full-height */
-  /* width: 15%; */
-  /* 0  width - change this with JavaScript */
-  /* position: fixed; */
-  /* Stay in place */
-  /* z-index: 1; */
-  /* Stay on top */
-  /* top: 0; */
-  /* left: 0; */
-  /* background-color: #ffffff00; */
-  /* Black */
-  /* overflow-x: hidden; */
-  /* Disable horizontal scroll */
-  /* padding-top: 60px; */
-  /* Place content 60px from the top */
-  /* transition: 0.5s; */
-  /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* Navbar links */
@@ -62,30 +42,42 @@
   /* font-size: 40px; */
   /* margin-left: 50px; */
 }
-/* #main { */
-/* transition: margin-left 0.5s; */
-/* padding: 20px; */
-/* } */
 
-/* Current/active navbar link */
-/* .active { */
-/* background-color: #ffffff00; */
-/* } */
 /* media queries started */
-@media screen and (max-height: 450px) {
-  .navbar {
-    padding-top: 15px;
-  }
-  .navbar a {
-    font-size: 18px;
-  }
-}
+/* @media screen and (max-height: 500px) { */
+/* .navbar { */
+/* } */
+/* .navbar a { */
+/* } */
+/* } */
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
   .navbar a {
-    float: none;
     display: block;
+    font-size: 18px;
+  }
+  .navbar {
+    /* for side navbar uncommet this */
+    height: 100%;
+    /* 100% Full-height */
+    width: 15%;
+    /* 0  width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #ffffff00;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    /* padding-top: 60px; */
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    padding-top: 15px;
   }
 }
 body {
@@ -99,6 +91,8 @@ canvas {
   /* color: #4caf50; */
 }
 span {
+  position: fixed;
+  /* display: none; */
   color: white;
   float: right;
   display: none;
