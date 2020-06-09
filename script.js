@@ -103,7 +103,7 @@ class circle {
   draw() {
     c.beginPath();
     c.arc(this.x, this.y, this.r, 0, 2 * Math.PI, false); // c.bezierCurveTo(innerWidth / 2, innerHeight / 2, this.x, this.y, 10, 10);
-    c.fillStyle = "	#fffafa";
+    c.fillStyle = "rgba(255,255,255,0.5)";
     c.fill();
     c.strokeStyle = this.color;
     c.stroke();
@@ -124,22 +124,23 @@ class circle {
     this.x += this.dx;
     this.y += this.dy;
 
-    // if (
-    // mouse.x - this.x < 150 &&
-    // mouse.x - this.x > -150 &&
-    // mouse.y - this.y < 150 &&
-    // mouse.y - this.y > -150
-    // ) {
-    // if (this.r < this.MaxRadius) this.r += 1;
-    // } else if (this.r > this.MinRadius) this.r--;
+    //this is to increase the size of the circle on hovering of the cursor
+    /*  
+    if (
+     mouse.x - this.x < 150 &&
+     mouse.x - this.x > -150 &&
+     mouse.y - this.y < 150 &&
+     mouse.y - this.y > -150
+     ) {
+     if (this.r < this.MaxRadius) this.r += 1;
+     } else if (this.r > this.MinRadius) this.r--;
+     */
 
     this.draw();
   }
 }
 
-//var cir = new circle(100, 100, 4, 4, 30); //just for debugging purpose
 //Creates an array of objects
-
 var objectArray = [];
 for (var i = 0; i < 200; i++) {
   var r = 3;
