@@ -114,20 +114,24 @@ class circle {
     //console.log(Math.sqrt(Math.pow((mouse.x - this.x), 2) + Math.pow((mouse.y - this.y), 2)));
     // Math.abs(mouse.x - this.x);
 
-    if (this.x > canvas.width - this.r || this.x < this.r) this.dx = -this.dx;
-    if (this.y > canvas.height - this.r || this.y < this.r) this.dy = -this.dy;
+    if (this.x > canvas.width - this.r || this.x < this.r) {
+      this.dx = -this.dx;
+    }
+    if (this.y > canvas.height - this.r || this.y < this.r) {
+      this.dy = -this.dy;
+    }
 
-    // this.y += Math.sin(this.dy);
-    this.x += Math.sin(this.dx);
+    this.x += this.dx;
+    this.y += this.dy;
 
-    if (
-      mouse.x - this.x < 150 &&
-      mouse.x - this.x > -150 &&
-      mouse.y - this.y < 150 &&
-      mouse.y - this.y > -150
-    ) {
-      if (this.r < this.MaxRadius) this.r += 1;
-    } else if (this.r > this.MinRadius) this.r--;
+    // if (
+    // mouse.x - this.x < 150 &&
+    // mouse.x - this.x > -150 &&
+    // mouse.y - this.y < 150 &&
+    // mouse.y - this.y > -150
+    // ) {
+    // if (this.r < this.MaxRadius) this.r += 1;
+    // } else if (this.r > this.MinRadius) this.r--;
 
     this.draw();
   }
@@ -137,8 +141,8 @@ class circle {
 //Creates an array of objects
 
 var objectArray = [];
-for (var i = 0; i < 100; i++) {
-  var r = 1;
+for (var i = 0; i < 200; i++) {
+  var r = 3;
   var x = Math.random() * canvas.width;
   var y = Math.random() * canvas.height;
   var dx = Math.random() - 0.5;
@@ -149,15 +153,15 @@ for (var i = 0; i < 100; i++) {
 fillExtra = () => {
   objectArray = [];
   for (var i = 0; i < 200; i++) {
-    var r = 1 + Math.random() * 20;
+    var r = 3;
     var x = Math.random() * canvas.width;
     var y = Math.random() * canvas.height;
-    var dx = (Math.random() - 0.5) * 5;
-    var dy = (Math.random() - 0.5) * 5;
+    var dx = Math.random() - 0.5;
+    var dy = Math.random() - 0.5;
     objectArray.push(new circle(x, y, dx, dy, r));
   }
 };
-fillExtra();
+// fillExtra();
 //to create an animate loop
 animate = () => {
   c.clearRect(0, 0, canvas.width, canvas.height);
