@@ -19,18 +19,10 @@
   display: block;
   float: left;
   text-align: center;
-  padding: 12px;
+  padding: 15px;
   color: white;
   text-decoration: none;
   font-size: 150%;
-
-  /*  */
-  /* padding: 8px 8px 8px 32px; */
-  /* text-decoration: none; */
-  /* font-size: 25px; */
-  /* color: #818181; */
-  /* display: block; */
-  /* transition: 0.3s; */
 }
 
 /* Navbar links on mouse-over */
@@ -39,20 +31,7 @@
 }
 .navbar .closebtn {
   position: absolute;
-  /* top: 0; */
-  /* right: 5px; */
-  /* font-size: 40px; */
-  /* margin-left: 50px; */
 }
-
-/* media queries started */
-/* @media screen and (max-height: 500px) { */
-/* .navbar { */
-/* } */
-/* .navbar a { */
-/* } */
-/* } */
-
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
   .navbar a {
@@ -63,14 +42,14 @@
     /* for side navbar uncomment this */
     height: 100%;
     /* 100% Full-height */
-    width: 15%;
+    width: 22%;
     /* 0  width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
     z-index: 1;
     /* Stay on top */
     top: 0;
-    left: 0;
+    left: 2px;
     background-color: #ffffff00;
     /* Black */
     overflow-x: hidden;
