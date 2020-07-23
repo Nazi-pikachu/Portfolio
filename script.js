@@ -3,52 +3,7 @@
 $(document).ready(function () {
   console.log("HI");
 });
-
-/************please ignore this all!!!!! main code below
- 
-var canvas = document.querySelector('canvas');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-var c = canvas.getContext("2d");
-//c.fillStyle = "rgba(255,255,255,0.7)";
-//c.fillRect(canvas.width / 2 - 100 / 2, canvas.height / 2 - 100 / 2, 100, 100);
-line animation
-c.beginPath();
-c.moveTo(canvas.width / 2, 0);
-c.lineTo(0, canvas.height / 2);
-c.lineTo(canvas.width / 2, canvas.height);
-c.lineTo(canvas.width, canvas.height / 2);
-c.lineTo(canvas.width / 2, 0);
-c.lineTo(canvas.width / 2, canvas.height);
-c.strokeStyle = "rgba(255,255,255,0.5)";
-c.stroke();
-var x = Math.random() * canvas.width;
-var dx = 10;
-var y = Math.random() * canvas.height;
-var dy = 10;
-animate = () => {
-    requestAnimationFrame(animate)
-    c.clearRect(0, 0, canvas.width, canvas.height);
-    c.beginPath();
-    c.arc(x, y, 30, 0, 2 * Math.PI, false);
-    c.strokeStyle = "rgba(255,255,255,1)";
-    c.stroke();
-    c.fill();
-    if (x > canvas.width - 30 || x - 30 < 0)
-        dx = -dx;
-    else if (y > canvas.height - 30 || y - 30 < 0)
-        dy = -dy;
-
-    x += dx;
-    y += dy;
-}
-animate();
-
-**********************************************************/
-//let's practice some basic stuff first
-//document.getElementById('navbar').style.columnWidth = innerWidth;
-//document.getElementById('navbar').style.column = innerWidth;
-
+// canvas declearation
 var canvas = document.querySelector("canvas");
 var c = canvas.getContext("2d");
 var mouse = {

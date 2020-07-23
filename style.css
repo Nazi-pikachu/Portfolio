@@ -5,17 +5,19 @@
 }
 .navbar {
   width: 100%;
-  background-color: #ffffff00;
+  /* background-color: #ffffff00; */
   overflow: auto;
   position: fixed;
   transition: 0.5s;
   overflow-x: hidden;
+  /* padding: 10px; */
+  /* margin-right: 10px; */
 }
 
 /* Navbar links */
 .navbar a {
   display: block;
-  float: right;
+  float: left;
   text-align: center;
   padding: 12px;
   color: white;
@@ -54,11 +56,11 @@
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
   .navbar a {
-    display: block;
+    /* display: block; */
     font-size: 18px;
   }
   .navbar {
-    /* for side navbar uncommet this */
+    /* for side navbar uncomment this */
     height: 100%;
     /* 100% Full-height */
     width: 15%;
