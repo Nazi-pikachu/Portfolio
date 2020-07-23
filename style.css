@@ -42,7 +42,7 @@
     /* for side navbar uncomment this */
     height: 100%;
     /* 100% Full-height */
-    width: 22%;
+    width: 25%;
     /* 0  width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
@@ -77,4 +77,8 @@ span {
   color: white;
   float: right;
   display: none;
+}
+.section {
+  height: 90%;
+  width: 10%;
 }
