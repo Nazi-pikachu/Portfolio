@@ -79,6 +79,25 @@ span {
   display: none;
 }
 .section {
-  height: 90%;
-  width: 10%;
+  position: fixed;
+  color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  /* starts from here left on 24/7/19 */
+  margin-top: 25vh;
+  margin-bottom: 40vh;
 }
+.section > .block {
+  position: relative;
+  /* padding: 1vw; */
+  margin: 1.6vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: grid;
+  color: whitesmoke;
+  width: 30vw;
+  height: 100vh;
+  float: left;
+}
+/* .navbar > .block { */
+/* } */
