@@ -91,13 +91,32 @@ span {
 .section > .block {
   position: relative;
   /* padding: 1vw; */
-  margin: 1.6vw;
+  margin-left: 30vw;
   background-color: rgba(255, 255, 255, 0.1);
   position: grid;
   color: whitesmoke;
   width: 30vw;
   height: 100vh;
   float: left;
+  border-radius: 2%;
 }
-/* .navbar > .block { */
-/* } */
+.section > .block > img {
+  display: block;
+  height: 24%;
+  width: 50%;
+  position: relative;
+  margin-left: 25%;
+  margin-right: 25%;
+  top: -2cm;
+  border-radius: 50%;
+}
+.section > .block > .Contact {
+  height: 5%;
+  width: 10%;
+  margin: 7%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: block;
+  position: relative;
+  /* top: 2cm; */
+  float: left;
+}
