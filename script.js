@@ -12,13 +12,13 @@ var mouse = {
 };
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-// var color = [
-// "rgba(255, 255, 255, 0.9)",
-// "rgba(255, 255, 255, 0.9)",
-// "rgba(255, 255, 255, 0.9)",
-// "rgba(255, 255, 255, 0.9)",
-// "rgba(255, 255, 255, 0.9)",
-// ];
+var color = [
+  "rgba(255, 255, 255, 0.1)",
+  "rgba(255, 255, 255, 0.2)",
+  "rgba(255, 255, 255, 0.3)",
+  "rgba(255, 255, 255, 0.4)",
+  "rgba(255, 255, 255, 0.5)",
+];
 
 //lets add some interactivity to our animation
 window.addEventListener("mousemove", function (event) {
@@ -50,15 +50,16 @@ class circle {
     this.dy = dy;
     this.MinRadius = 9;
     this.MaxRadius = 5;
-    // this.color = color[Math.floor(Math.random() * 5)];
-    this.color = "rgba(255, 255, 255, 0.9)";
+    this.color = color[Math.floor(Math.random() * 5)];
+    this.opacity = 0.01;
+    // this.color = "rgba(255, 255, 255, 0.3)";
   }
 
   //this will draw a circle on canvas
   draw() {
     c.beginPath();
     c.arc(this.x, this.y, this.r, 0, 2 * Math.PI, false); // c.bezierCurveTo(innerWidth / 2, innerHeight / 2, this.x, this.y, 10, 10);
-    c.fillStyle = "rgba(255,255,255,0.5)";
+    c.fillStyle = color[Math.floor(Math.random() * 5)];
     c.fill();
     c.strokeStyle = this.color;
     c.stroke();
