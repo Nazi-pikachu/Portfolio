@@ -75,7 +75,7 @@ span {
 }
 .section > .block > img {
   display: block;
-  height: 24%;
+  /* height: 24%; */
   width: 50%;
   position: relative;
   margin-left: 25%;
