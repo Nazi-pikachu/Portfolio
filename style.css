@@ -5,13 +5,10 @@
 }
 .navbar {
   width: 100%;
-  /* background-color: #ffffff00; */
   overflow: auto;
   position: fixed;
   transition: 0.5s;
   overflow-x: hidden;
-  /* padding: 10px; */
-  /* margin-right: 10px; */
 }
 
 /* Navbar links */
@@ -27,7 +24,6 @@
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
-  /* background-color: #000; */
   background: radial-gradient(#4405f7, transparent);
 }
 .navbar .closebtn {
@@ -40,13 +36,12 @@ body {
 }
 
 canvas {
+  /* margin: 1px; */
   height: 100%;
   width: 100%;
-  /* color: #4caf50; */
 }
 span {
   position: fixed;
-  /* display: none; */
   color: white;
   float: right;
   display: none;
@@ -63,53 +58,48 @@ span {
 }
 .section > .block {
   position: relative;
-  /* padding: 1vw; */
-  margin-left: 30vw;
-  /* background-color: rgba(255, 255, 255, 0.1); */
+  margin-left: 33vw;
+  background-color: rgba(255, 255, 255, 0.1);
   position: grid;
   color: whitesmoke;
   width: 30vw;
-  height: 100vh;
   float: left;
   border-radius: 2%;
 }
 .section > .block > img {
   display: block;
-  /* height: 24%; */
   width: 40%;
   position: relative;
   margin-left: 25%;
   margin-right: 25%;
   top: -1cm;
-  /* border-radius: 50%; */
 }
 .section > .block > .Contact {
   margin: 7%;
-  /* background-color: rgba(255, 255, 255, 0.1); */
   display: block;
   position: relative;
   float: left;
 }
+@media screen and (max-width: 1024px) {
+  .section > .block {
+    margin-left: 28vw;
+    width: 50vw;
+    height: 70vh;
+  }
+  .section {
+    margin-top: 20vh;
+  }
+}
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
   .navbar a {
-    /* display: block; */
     font-size: 18px;
-    /* display: none; */
   }
   .navbar {
-    /* for side navbar uncomment this */
-    /* height: 100%; */
-    /* 100% Full-height */
-    /* width: 25%; */
-    /* 0  width - change this with JavaScript */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Stay on top */
     top: 0;
     left: 2px;
-    background-color: #ffffff00;
     transition: 0.5s;
     padding-top: 15px;
   }
@@ -118,16 +108,9 @@ span {
     width: 100vw;
   }
 }
+
 .section > .block > .Contact:hover {
   background: radial-gradient(#4405f7, transparent);
   box-shadow: radial-gradient(#4405f7, transparent);
   border-color: radial-gradient(circle closest-side, #4405f7, transparent);
 }
-/* @keyframes mymove { */
-/* 0% { */
-/* border-color: blue; */
-/* } */
-/* 100% { */
-/* background: blueviolet; */
-/* } */
-/* } */

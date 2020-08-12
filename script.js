@@ -63,6 +63,7 @@ class circle {
     c.fill();
     c.strokeStyle = this.color;
     c.stroke();
+    // To include copyright in the canvas
   }
   //this will refresh and update the canvas
   update() {
@@ -129,16 +130,29 @@ animate = () => {
   requestAnimationFrame(animate);
 };
 animate();
-console.log(innerWidth, innerHeight);
-
-// form here code of navbar starts
-function openNav() {
-  document.getElementById("navbar").style.width = "250px";
-  // document.getElementById("main").style.marginLeft = "250px";
+console.log(canvas.width, canvas.height);
+// To change the size of the contact image buttons
+var img = document.getElementsByTagName("img");
+if (canvas.width >= 425) {
+  for (var i = 1; i < img.length; i++) {
+    img[i].style.width = "50px";
+  }
 }
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("navbar").style.width = "0";
-  // document.getElementById("main").style.marginLeft = "0";
+// Adding typing effect
+var h = document.getElementById("typingEffect");
+console.log(h);
+var i = 0;
+var txt = "Hi! I am Rishabh";
+// console.log(txt.length);
+var speed = 200;
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typingEffect").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
+typeWriter();
+setTimeout(() => {
+  document.getElementById("typingEffect").innerHTML += "&#128516";
+}, txt.length * 200 + 200);
